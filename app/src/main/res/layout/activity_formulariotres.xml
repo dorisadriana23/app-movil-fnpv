@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondodecardio"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="28dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/amaranth"
+        android:gravity="center"
+        android:text="Novedades De Usuarios Al Programa"
+        android:textColor="@color/teal_700"
+        android:textSize="38dp"
+        android:textStyle="bold"
+        android:transitionName="textTrans" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/editcodh"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="CODH"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editnombre"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombres"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editapellidos"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="" />
+
+    <EditText
+        android:id="@+id/editidentificacion"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Identificación"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editNovedad"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Novedades"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editresponsable"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Responsable Brigada"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="text" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:onClick="pasarusuario"
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Guardar"
+        android:textColor="@color/black"
+        app:iconTint="@color/teal_700" />
+
+
+</LinearLayout>

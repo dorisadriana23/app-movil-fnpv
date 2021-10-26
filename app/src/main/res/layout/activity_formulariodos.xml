@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/fondodecardio"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/continuar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/amaranth"
+        android:text="Informe De Riesgos Cardiogenales"
+        android:textSize="24sp"
+        android:transitionName="iniciaSecionTextTrans" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/loginImageView"
+        android:layout_width="141dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logofundacion"
+        android:transitionName="logoImageTrans" />
+
+    <TextView
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:text="Total  Usuarios Atendidos :"
+        android:transitionName="textTrans" />
+
+    <EditText
+        android:id="@+id/edithta"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="HTA"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editdm"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DM"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/edithta_dm"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="HTA/DM"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="date" />
+    <TextView
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:text="Total  Usuarios Ingresan Al Programa :"
+        android:transitionName="textTrans" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/editHTA"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="HTA"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editDM"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="DM"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/ediTHTA_DM"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="HTA/DM"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="date" />
+    <EditText
+        android:id="@+id/observaciones"
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Observaciones"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:inputType="text" />
+
+
+    <Button
+        android:onClick="pasar3"
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Guardar"
+        android:textColor="@color/black"
+        app:iconTint="@color/teal_700" />
+
+
+</LinearLayout>

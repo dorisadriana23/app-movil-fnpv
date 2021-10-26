@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">fnpv21</string>
+    <string name="web_client_id">xml</string>
+    <string-array name="informe">
+        <item>Seleccione</item>
+        <item>HTA</item>
+        <item>DM</item>
+        <item>HTA/DM</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
