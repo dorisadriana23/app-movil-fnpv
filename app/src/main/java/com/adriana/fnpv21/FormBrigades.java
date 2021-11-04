@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -18,14 +19,16 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreSettings;
 
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class FormBrigades extends Activity {
 
     private TextView tv;
-    EditText mEditTextnombreconductor;
-    EditText mEditTextAuxiliarEncargado;
+    EditText mEditTextnombreconductor, mEditTextAuxiliarEncargado ,mEditTextLugarEvento,mEditTextDecriptionActivit,mEditTextnumberAsistents;
+    EditText datePickerDateEvent;
+
     Button mButtonGuardarDatos;
 
     public static final String TAG = "DocSnippets";
@@ -47,10 +50,14 @@ public class FormBrigades extends Activity {
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder().setPersistenceEnabled(true).build();
 
         db.setFirestoreSettings(settings);
-
+       mEditTextLugarEvento=findViewById(R.id.editlugar_evento);
+       datePickerDateEvent = findViewById(R.id.editfecha_evento);
         mEditTextnombreconductor = findViewById(R.id.editConductor_n);
         mEditTextAuxiliarEncargado = findViewById(R.id.editAuxiliar_zona);
+        mEditTextDecriptionActivit=findViewById(R.id.editdescripcion_actividad);
+        mEditTextnumberAsistents=findViewById(R.id.editasistentes);
         mButtonGuardarDatos = findViewById(R.id.btnGuardarAsistent);
+
 
         //noinspection Convert2Lambda
         mButtonGuardarDatos.setOnClickListener(new View.OnClickListener() {
@@ -63,12 +70,20 @@ public class FormBrigades extends Activity {
 
 
     private void setmButtonGuardarDatos() {
-        String nombre_conductor = mEditTextnombreconductor.getText().toString();
-        String Auxiliar_encargado = mEditTextAuxiliarEncargado.getText().toString();
-
         Map<String, Object> map = new HashMap<>();
+
+        String lugar_evento = mEditTextLugarEvento.getText().toString();
+        String nombre_conductor = mEditTextnombreconductor.getText().toString();
+        String fecha_evento = datePickerDateEvent.getText().toString();
+        String Auxiliar_encargado = mEditTextAuxiliarEncargado.getText().toString();
+        String descripcion_actividad = mEditTextAuxiliarEncargado.getText().toString();
+
+        map.put("lugar_evento",lugar_evento);
         map.put("name_chofer", nombre_conductor);
+        map.put("date_event",fecha_evento);
         map.put("asistent_birgade", Auxiliar_encargado);
+        map.put("descripcion_activity",descripcion_actividad);
+
         //db.collection("formulario_brigadas").document("2").set(map);
 
         db.collection("formulario_brigadas")
