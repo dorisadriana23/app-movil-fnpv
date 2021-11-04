@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "19100417419",
+    "project_id": "fundacion-f9b8e",
+    "storage_bucket": "fundacion-f9b8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19100417419:android:e8a213ba40e5f75786838e",
+        "android_client_info": {
+          "package_name": "com.adriana.fnpv21"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19100417419-p04080dd50l8v66kdhalg1r4semrdpa6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdGQfbjvlUFRJ6YsMlC88xla1K9b8n9K0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19100417419-p04080dd50l8v66kdhalg1r4semrdpa6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

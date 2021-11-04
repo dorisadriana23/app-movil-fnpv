@@ -15,7 +15,7 @@ public class SingUp extends AppCompatActivity {
     }
 
     public void pasarinicio(View view) {
-        Intent pasar=new Intent(SingUp.this, formularioActivity.class);
+        Intent pasar=new Intent(SingUp.this, FormBrigades.class);
         startActivity(pasar);
     }
 }

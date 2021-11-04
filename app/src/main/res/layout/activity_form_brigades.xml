@@ -89,6 +89,20 @@
         android:gravity="center"
         android:layout_gravity="center"
         android:inputType="text" />
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/planets_array"
+        ></Spinner>
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        />
+
     <EditText
         android:id="@+id/editasistentes"
         android:layout_width="318dp"
@@ -101,7 +115,7 @@
 
 
     <Button
-        android:id="@+id/btnGuardar"
+        android:id="@+id/btnGuardarAsistent"
         android:onClick="pasarinfo"
         android:layout_width="match_parent"
         android:layout_height="68dp"
