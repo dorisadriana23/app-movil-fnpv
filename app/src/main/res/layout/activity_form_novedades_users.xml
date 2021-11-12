@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondodecardio"
     android:orientation="vertical">
+
+
     <TextView
         android:id="@+id/form"
         android:layout_width="wrap_content"
@@ -18,14 +20,11 @@
         android:textSize="38dp"
         android:textStyle="bold"
         android:transitionName="textTrans" />
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
 
     <EditText
         android:id="@+id/editcodh"
-        android:layout_width="314dp"
+        android:layout_width="318dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="CODH"
@@ -73,26 +72,16 @@
         android:layout_gravity="center"
         android:inputType="text" />
 
-    <EditText
-        android:id="@+id/editresponsable"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Responsable Brigada"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="text" />
 
-<EditText
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:entries="@array/responsables_brigada" />
 
     <Button
         android:onClick="pasarusuario"
-        android:id="@+id/btnGuardar"
+        android:id="@+id/btnGuardarnovedades"
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:backgroundTint="@color/teal_700"

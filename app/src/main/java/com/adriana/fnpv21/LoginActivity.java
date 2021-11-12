@@ -16,7 +16,7 @@ public class LoginActivity extends AppCompatActivity {
   setContentView(R.layout.activity_login);
  }
 
- public void pasarregistro(View view) {
+ public void pasarregistrosusuarios(View view) {
   Intent pasar=new Intent(LoginActivity.this, SingUp.class);
   startActivity(pasar);
  }
@@ -25,7 +25,10 @@ public class LoginActivity extends AppCompatActivity {
   Intent pasar=new Intent(LoginActivity.this, FormBrigades.class);
   startActivity(pasar);
  }
-}
+
+
+ }
+
 
 
 

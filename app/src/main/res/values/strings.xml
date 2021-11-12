@@ -10,7 +10,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string-array name="planets_array">
-        <item>Mercury</item>
+        <item>Lucia Marinez</item>
+        <item>Ana Gomez</item>
+        <item>sofia Bermudes</item>
+        <item>Marcos Serrano</item>
+        <item>Andres sanin</item>
+        <item>Sofia Martines</item>
+        <item>Juan solis</item>
+        <item>luis Camargo</item>
+    </string-array>
+    <string-array name="responsables_brigadas">
+        <item>Lista Desplegable de Responsables de Brigada</item>
         <item>Venus</item>
         <item>Earth</item>
         <item>Mars</item>

@@ -3,7 +3,7 @@
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/imagendefondotres"
+    android:background="@drawable/fondodecardio"
     android:orientation="vertical">
 
 
@@ -28,8 +28,10 @@
         android:layout_gravity="center"
         android:layout_margin="2dp"
         android:layout_marginTop="20dp"
-        android:src="@drawable/logofundacion"
+        android:src="@drawable/fnpv"
         android:transitionName="logoImageTrans" />
+
+
 
     <TextView
         android:id="@+id/inf_tex"
@@ -56,5 +58,20 @@
         android:layout_marginTop="20dp"
         android:src="@drawable/mij"
         android:transitionName="logoImageTrans"/>
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="437dp"
+        android:layout_height="53dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="143dp"
+        android:gravity="center"
+        android:text="Bienvenido"
+        android:textColor="@color/black"
+        card_view:backgroundTint="#009688" />
 </LinearLayout>
 

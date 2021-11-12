@@ -2,6 +2,7 @@ package com.adriana.fnpv21;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,7 +27,7 @@ import java.util.Map;
 public class FormBrigades extends Activity {
 
     private TextView tv;
-    EditText mEditTextnombreconductor, mEditTextAuxiliarEncargado ,mEditTextLugarEvento,mEditTextDecriptionActivit,mEditTextnumberAsistents;
+    EditText  mEditTextHoraEvento,mEditTextnombreconductor, mEditTextAuxiliarEncargado ,mEditTextLugarEvento,mEditTextDecriptionActivit,mEditTextnumberAsistents;
     EditText datePickerDateEvent;
 
     Button mButtonGuardarDatos;
@@ -52,6 +53,7 @@ public class FormBrigades extends Activity {
         db.setFirestoreSettings(settings);
        mEditTextLugarEvento=findViewById(R.id.editlugar_evento);
        datePickerDateEvent = findViewById(R.id.editfecha_evento);
+       mEditTextHoraEvento=findViewById(R.id.edithora_evento);
         mEditTextnombreconductor = findViewById(R.id.editConductor_n);
         mEditTextAuxiliarEncargado = findViewById(R.id.editAuxiliar_zona);
         mEditTextDecriptionActivit=findViewById(R.id.editdescripcion_actividad);
@@ -75,12 +77,14 @@ public class FormBrigades extends Activity {
         String lugar_evento = mEditTextLugarEvento.getText().toString();
         String nombre_conductor = mEditTextnombreconductor.getText().toString();
         String fecha_evento = datePickerDateEvent.getText().toString();
+        String hora_evento=mEditTextHoraEvento.getText().toString();
         String Auxiliar_encargado = mEditTextAuxiliarEncargado.getText().toString();
         String descripcion_actividad = mEditTextAuxiliarEncargado.getText().toString();
 
         map.put("lugar_evento",lugar_evento);
         map.put("name_chofer", nombre_conductor);
         map.put("date_event",fecha_evento);
+        map.put("hora_event",hora_evento);
         map.put("asistent_birgade", Auxiliar_encargado);
         map.put("descripcion_activity",descripcion_actividad);
 
@@ -100,8 +104,15 @@ public class FormBrigades extends Activity {
                         Log.w(TAG, "Error adding document", e);
                     }
                 });
+
+        Intent pasarte=new Intent(FormBrigades.this, FormCardio.class);
+        startActivity(pasarte);
     }
 
+    public void pasarte(View view) {
+        Intent pasarte=new Intent(FormBrigades.this, FormCardio.class);
+        startActivity(pasarte);
+    }
 }
 
 

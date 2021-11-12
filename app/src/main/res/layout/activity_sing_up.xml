@@ -11,12 +11,11 @@
 
     <ImageView
         android:id="@+id/signUpImageView"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:src="@drawable/logofundacion"
-        android:transitionName="logoImageTrans"
-        android:layout_gravity="left"
-        />
+        android:layout_width="135dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center"
+        android:src="@drawable/fnpv"
+        android:transitionName="logoImageTrans" />
 
     <TextView
 
@@ -52,123 +51,71 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
 
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="471dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginBottom="14dp"
                 android:orientation="vertical">
-                //nombre
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/nombrecompleto"
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp" />
+
+                <EditText
+                    android:id="@+id/nombre_completo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nombre completo"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/amaranth"
-                        tools:ignore="MissingClass" />
+                    android:hint="Nombre completo" />
 
-
-                </com.google.android.material.textfield.TextInputLayout>
 
                 //identificacion
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/identificacion"
+
+                <EditText
+                    android:id="@+id/identificacion_usuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Identificación "
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="number"
-                        android:fontFamily="@font/amaranth"/>
+                    android:hint="Identificación " />
 
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                //correo
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/email"
+                <EditText
+                    android:id="@+id/email_usuario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Email "
-                    android:transitionName="emailInputTextTrans"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/emailEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/amaranth"/>
-
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:transitionName="emailInputTextTrans" />
 
                 //telefono
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/telefono"
+
+
+                <EditText
+                    android:id="@+id/usuario_telefono"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Teléfono "
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/amaranth"/>
+                    android:hint="Teléfono " />
 
 
-                </com.google.android.material.textfield.TextInputLayout>
+                //confirmacion de contrasena
 
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/rh"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Rh"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/contrasena"
+                <EditText
+                    android:id="@+id/usuario_contrasena"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Contraseña "
                     android:transitionName="passwordInputTextTrans"
-                    app:passwordToggleEnabled="true"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwordEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/amaranth"/>
+                    app:passwordToggleEnabled="true" />
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
 
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-
-                //confirmacion de contrasena
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/confirmarcontrasena"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Confirma tu contraseña "
-                    app:passwordToggleEnabled="true"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/confirmPasswordEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/amaranth"
-                        android:inputType="textPassword"/>
-
-                </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_height="51dp" />
 
                 <Button
-                    android:onClick="pasarinicio"
+                    android:id="@+id/btnregistrar"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -177,21 +124,6 @@
                     android:textColor="@color/black"
                     android:transitionName="buttonSignInTrans"
                     app:backgroundTint="@color/teal_700" />
-
-                <TextView
-                    android:id="@+id/nuevoUsuario"
-                    android:layout_width="wrap_content"
-                    android:layout_height="47dp"
-                    android:layout_gravity="center"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:fontFamily="@font/amaranth"
-                    android:text="¿Ya tiene una cuenta? "
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold"
-                    android:transitionName="newUserTrans" />
 
 
             </LinearLayout>

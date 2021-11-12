@@ -27,7 +27,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="2dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/logofundacion"
+                android:src="@drawable/fnpv"
                 android:transitionName="logoImageTrans" />
 
             <TextView
@@ -60,44 +60,24 @@
                 android:layout_marginBottom="14dp"
                 android:orientation="vertical">
 
-
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
                     android:id="@+id/usuario"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:textColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
-                    android:gravity="center"
                     android:hint="Email"
-                    android:transitionName="emailInputTextTrans">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/emailEditText"
-                        android:layout_width="337dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/amaranth"
-                        app:errorEnabled="true"
-                        app:errorIconDrawable="@null"/>
+                   />
 
 
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
+                <EditText
                 android:id="@+id/contrasena"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Contraseña "
-                android:transitionName="passwordInputTextTrans"
                 app:passwordToggleEnabled="true"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                />
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/passwordEditText"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/amaranth"/>
-
-                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <TextView
@@ -116,7 +96,7 @@
                     tools:ignore="RtlCompat" />
 
 
-                <com.google.android.material.button.MaterialButton
+                  <Button
                     android:id="@+id/btninicioSesion"
                     android:onClick="pasarformulario"
                     android:layout_width="match_parent"
@@ -130,9 +110,9 @@
                     app:rippleColor="@color/teal_700"
                     app:cornerRadius="10dp"/>
 
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/btnregistroSesion"
-                    android:onClick="pasarregistro"
+                    android:onClick="pasarregistrosusuarios"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"

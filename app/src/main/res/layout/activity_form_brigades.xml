@@ -116,7 +116,7 @@
 
     <Button
         android:id="@+id/btnGuardarAsistent"
-        android:onClick="pasarinfo"
+        android:onClick="pasarte"
         android:layout_width="match_parent"
         android:layout_height="68dp"
         android:backgroundTint="@color/teal_700"
@@ -124,11 +124,6 @@
         android:textColor="@color/black"
         app:iconTint="@color/teal_700" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/fnpv" />
 
 
 </LinearLayout>
