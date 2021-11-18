@@ -88,14 +88,13 @@
         android:hint="Integrantes"
         android:gravity="center"
         android:layout_gravity="center"
-        android:inputType="text" />
+        android:inputType="text"/>
 
     <Spinner
         android:id="@+id/planets_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/planets_array"
-        ></Spinner>
+        android:entries="@array/planets_array"/>
     <TextView
         android:id="@+id/tvId"
         android:layout_width="fill_parent"

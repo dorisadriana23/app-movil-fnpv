@@ -76,6 +76,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Contraseña "
                 app:passwordToggleEnabled="true"
+                    android:inputType="textPassword"
                 />
 
 
@@ -98,7 +99,6 @@
 
                   <Button
                     android:id="@+id/btninicioSesion"
-                    android:onClick="pasarformulario"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
@@ -108,7 +108,9 @@
                     app:backgroundTint="@color/teal_700"
                     app:iconTint="@color/teal_700"
                     app:rippleColor="@color/teal_700"
-                    app:cornerRadius="10dp"/>
+                    app:cornerRadius="10dp"
+                      android:onClick="pasarregistrosusuariosu"
+                      />
 
                 <Button
                     android:id="@+id/btnregistroSesion"

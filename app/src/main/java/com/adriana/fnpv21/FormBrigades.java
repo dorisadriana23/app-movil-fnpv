@@ -26,8 +26,9 @@ import java.util.Map;
 
 public class FormBrigades extends Activity {
 
+    public static String user;
     private TextView tv;
-    EditText  mEditTextHoraEvento,mEditTextnombreconductor, mEditTextAuxiliarEncargado ,mEditTextLugarEvento,mEditTextDecriptionActivit,mEditTextnumberAsistents;
+    EditText mEditTextHoraEvento, mEditTextnombreconductor, mEditTextAuxiliarEncargado, mEditTextLugarEvento, mEditTextDecriptionActivit, mEditTextnumberAsistents;
     EditText datePickerDateEvent;
 
     Button mButtonGuardarDatos;
@@ -44,20 +45,16 @@ public class FormBrigades extends Activity {
         FirebaseApp.initializeApp(this);
         db = FirebaseFirestore.getInstance();
 
-        //FirebaseFirestore db = FirebaseFirestore.getInstance();
-        // [END get_firestore_instance]
-
-        // [START set_firestore_settings]
         FirebaseFirestoreSettings settings = new FirebaseFirestoreSettings.Builder().setPersistenceEnabled(true).build();
 
         db.setFirestoreSettings(settings);
-       mEditTextLugarEvento=findViewById(R.id.editlugar_evento);
-       datePickerDateEvent = findViewById(R.id.editfecha_evento);
-       mEditTextHoraEvento=findViewById(R.id.edithora_evento);
+        mEditTextLugarEvento = findViewById(R.id.editlugar_evento);
+        datePickerDateEvent = findViewById(R.id.editfecha_evento);
+        mEditTextHoraEvento = findViewById(R.id.edithora_evento);
         mEditTextnombreconductor = findViewById(R.id.editConductor_n);
         mEditTextAuxiliarEncargado = findViewById(R.id.editAuxiliar_zona);
-        mEditTextDecriptionActivit=findViewById(R.id.editdescripcion_actividad);
-        mEditTextnumberAsistents=findViewById(R.id.editasistentes);
+        mEditTextDecriptionActivit = findViewById(R.id.editdescripcion_actividad);
+        mEditTextnumberAsistents = findViewById(R.id.editasistentes);
         mButtonGuardarDatos = findViewById(R.id.btnGuardarAsistent);
 
 
@@ -77,16 +74,16 @@ public class FormBrigades extends Activity {
         String lugar_evento = mEditTextLugarEvento.getText().toString();
         String nombre_conductor = mEditTextnombreconductor.getText().toString();
         String fecha_evento = datePickerDateEvent.getText().toString();
-        String hora_evento=mEditTextHoraEvento.getText().toString();
+        String hora_evento = mEditTextHoraEvento.getText().toString();
         String Auxiliar_encargado = mEditTextAuxiliarEncargado.getText().toString();
         String descripcion_actividad = mEditTextAuxiliarEncargado.getText().toString();
 
-        map.put("lugar_evento",lugar_evento);
+        map.put("lugar_evento", lugar_evento);
         map.put("name_chofer", nombre_conductor);
-        map.put("date_event",fecha_evento);
-        map.put("hora_event",hora_evento);
+        map.put("date_event", fecha_evento);
+        map.put("hora_event", hora_evento);
         map.put("asistent_birgade", Auxiliar_encargado);
-        map.put("descripcion_activity",descripcion_actividad);
+        map.put("descripcion_activity", descripcion_actividad);
 
         //db.collection("formulario_brigadas").document("2").set(map);
 
@@ -105,12 +102,7 @@ public class FormBrigades extends Activity {
                     }
                 });
 
-        Intent pasarte=new Intent(FormBrigades.this, FormCardio.class);
-        startActivity(pasarte);
-    }
-
-    public void pasarte(View view) {
-        Intent pasarte=new Intent(FormBrigades.this, FormCardio.class);
+        Intent pasarte = new Intent(FormBrigades.this, FormCardio.class);
         startActivity(pasarte);
     }
 }
