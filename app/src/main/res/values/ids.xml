@@ -3,4 +3,6 @@
     <item name="ListView" type="id" />
     <item name="EditText" type="id" />
     <item name="idcardio" type="id" />
+    <item name="editdescripcion_actividad" type="id" />
+    <item name="editAuxiliar_zona" type="id" />
 </resources>

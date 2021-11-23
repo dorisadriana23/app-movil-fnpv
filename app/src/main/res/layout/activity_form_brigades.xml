@@ -1,129 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView6"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondodecardio"
-    android:orientation="vertical">
-    <TextView
-        android:id="@+id/form"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="28dp"
-        android:layout_marginTop="2dp"
-        android:fontFamily="@font/amaranth"
-        android:gravity="center"
-        android:text="Formulario Brigadas"
-        android:textColor="@color/teal_700"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:transitionName="textTrans" />
+    android:fillViewport="true">
 
-
-    <EditText
-        android:id="@+id/editlugar_evento"
-        android:layout_width="314dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Lugar del evento"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/editfecha_evento"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-
-        android:ems="10"
-        android:hint="fecha evento"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/edithora_evento"
-        android:layout_width="322dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="hora evento"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="" />
-
-    <EditText
-        android:id="@+id/editConductor_n"
-        android:layout_width="316dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="N. Conductor"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/editAuxiliar_zona"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Auxiliar Encargado"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/editdescripcion_actividad"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Descripcion de la actividad"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="text" />
-    <EditText
-        android:id="@+id/editintegrantes_actividad"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Integrantes"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="text"/>
-
-    <Spinner
-        android:id="@+id/planets_spinner"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/planets_array"/>
-    <TextView
-        android:id="@+id/tvId"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dip"
-        />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/editasistentes"
-        android:layout_width="318dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Numero de asistentes"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:inputType="date" />
+        <TextView
+            android:id="@+id/form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="28dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/amaranth"
+            android:gravity="center"
+            android:text="Formulario Brigadas"
+            android:textColor="@color/teal_700"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:transitionName="textTrans" />
 
 
-    <Button
-        android:id="@+id/btnGuardarAsistent"
-        android:onClick="pasarte"
-        android:layout_width="match_parent"
-        android:layout_height="68dp"
-        android:backgroundTint="@color/teal_700"
-        android:text="Guardar"
-        android:textColor="@color/black"
-        app:iconTint="@color/teal_700" />
+        <EditText
+            android:id="@+id/editlugar_evento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="*Lugar del evento:"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/editfecha_evento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="*Fecha Evento:"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/edithora_evento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="*Hora Evento:"
+            android:inputType="" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/editConductor_n"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="*N. Conductor:"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="22dp" />
 
 
+        <EditText
+            android:id="@+id/editasistentes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="*Integrantes Brigada:"
+            android:inputType="text" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="añadir" />
 
+        <ListView
+            android:id="@+id/listviewIPS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnGuardarAsistent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:iconTint="@color/teal_700"
+            android:onClick="pasarte"
+            android:text="Guardar"
+            android:textColor="@color/black" />
+    </LinearLayout>
+</ScrollView>

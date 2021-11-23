@@ -6,12 +6,20 @@
    android:background="@drawable/fondodecardio"
     android:orientation="vertical"
     android:id="@+id/linerLayout">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="197dp"
+        android:layout_height="110dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/fnpv" />
     <TextView
         android:id="@+id/btnguardarcardio"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginTop="2dp"
         android:fontFamily="@font/amaranth"
+        android:layout_gravity="center"
         android:text="Informe De Riesgos Cardiogenales"
         android:textSize="24sp"
         android:transitionName="iniciaSecionTextTrans" />
@@ -27,32 +35,26 @@
 
     <EditText
         android:id="@+id/hta_atendidos"
-        android:layout_width="392dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
-        android:gravity="center"
-        android:hint="HTA"
+        android:hint="*HTA:"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/dm_atendidos"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
-        android:gravity="center"
-        android:hint="DM"
+        android:hint="*DM:"
         android:inputType="number" />
 
     <EditText
         android:id="@+id/edithta_dm"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
-        android:gravity="center"
-        android:hint="HTA/DM"
+        android:hint="*HTA/DM:"
         android:inputType="date" />
     <TextView
         android:layout_width="337dp"
@@ -65,42 +67,34 @@
 
     <EditText
         android:id="@+id/ingresan_hta"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
-        android:gravity="center"
-        android:hint="HTA"
+        android:hint="*HTA:"
         android:inputType="date" />
 
     <EditText
         android:id="@+id/ingresan_dm"
-        android:layout_width="428dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
-        android:gravity="center"
-        android:hint="DM"
+        android:hint="*DM:"
         android:inputType="date" />
 
     <EditText
         android:id="@+id/ediTHTA_DM"
-        android:layout_width="400dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
-        android:gravity="center"
-        android:hint="HTA/DM"
+        android:hint="*HTA/DM:"
         android:inputType="date" />
 
     <EditText
         android:id="@+id/observaciones"
-        android:layout_width="411dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:ems="10"
-        android:gravity="center"
-        android:hint="Observaciones"
+        android:hint="*Observaciones:"
         android:inputType="text" />
 
 

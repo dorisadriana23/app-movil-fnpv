@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.Spinner;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -24,9 +26,10 @@ import java.util.Map;
 import java.util.Random;
 
 public class FormNovedades extends AppCompatActivity {
-    EditText editcodh, mNombres, mApellidos, mIdentificacion, mNovedad;
-    Spinner planets_spinner;
-    Button btnGuardarnovedades;
+    EditText editcodh, mNombres, mApellidos, mIdentificacion, mNovedad,mEditText;
+    Spinner spinner, planets_spinner;
+    Button btnGuardarnovedades,btnAñadir;
+    private ListView mListView;
     double rand;
     public static final String TAG = "DocSnippets";
 
@@ -46,14 +49,17 @@ public class FormNovedades extends AppCompatActivity {
         mNombres = findViewById(R.id.editnombre);
         mApellidos = findViewById(R.id.editapellidos);
         mIdentificacion = findViewById(R.id.editidentificacion);
-        mNovedad = findViewById(R.id.editNovedad);
+        mListView=findViewById(R.id.ListView);
         planets_spinner = findViewById(R.id.planets_spinner);
         btnGuardarnovedades = findViewById(R.id.btnGuardarnovedades);
+        btnAñadir=findViewById(R.id.btnAñadir);
         rand = Math.random();
         editcodh=findViewById(R.id.editcodh);
         editcodh.setText("" + rand);
+        spinner = findViewById(R.id.novedades);
 
         //noinspection Convert2Lambda
+
         btnGuardarnovedades.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -94,6 +100,16 @@ public class FormNovedades extends AppCompatActivity {
 
         Intent pasarte = new Intent(FormNovedades.this, LoginActivity.class);
         startActivity(pasarte);
+        planets_spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
+            {
+                String selectedItem = parent.getItemAtPosition(position).toString();
+            }
+            public void onNothingSelected(AdapterView<?> parent)
+            {
+
+            }
+        });
     }
 
 

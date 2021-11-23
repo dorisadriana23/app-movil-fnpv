@@ -78,17 +78,6 @@
                     android:hint="Cargo"
                     android:inputType="textMultiLine" />
 
-                <Spinner
-                    android:id="@+id/list_Cargo"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:entries="@array/planets_array" />
-
-                <ListView
-                    android:id="@+id/lv_datosPersonas"
-                    android:layout_width="match_parent"
-                    android:layout_height="22dp" />
-
 
                 //identificacion
 

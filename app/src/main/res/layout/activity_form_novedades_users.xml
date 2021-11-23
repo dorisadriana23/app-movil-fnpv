@@ -24,67 +24,76 @@
 
     <EditText
         android:id="@+id/editcodh"
-        android:layout_width="318dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="CODH"
-        android:gravity="center"
-        android:layout_gravity="center"
+        android:hint="*CODH:"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/editnombre"
-        android:layout_width="318dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Nombres"
-        android:gravity="center"
-        android:layout_gravity="center"
+        android:hint="*Nombres:"
         android:inputType="text" />
 
     <EditText
         android:id="@+id/editapellidos"
-        android:layout_width="322dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Apellidos"
-        android:gravity="center"
-        android:layout_gravity="center"
+        android:hint="*Apellidos:"
         android:inputType="" />
 
     <EditText
         android:id="@+id/editidentificacion"
-        android:layout_width="316dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Identificación"
-        android:layout_gravity="center"
-        android:gravity="center"
+        android:hint="*Identificación:"
         android:inputType="text" />
 
+
+    <Spinner
+        android:id="@+id/novedades"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:entries="@array/novedades"
+        />
+
     <EditText
-        android:id="@+id/editNovedad"
-        android:layout_width="318dp"
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Novedades"
-        android:gravity="center"
-        android:layout_gravity="center"
+        android:hint="Medicamentos Pendientes"
         android:inputType="text" />
+
+
+    <Button
+        android:id="@+id/btnAñadir"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Añadir"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        app:iconTint="@color/teal_700" />
 
 
     <Spinner
         android:id="@+id/planets_spinner"
         android:layout_width="match_parent"
         android:layout_height="49dp"
-        android:entries="@array/responsables_brigada" />
+        android:entries="@array/responsables_brigadas" />
 
     <Button
-        android:onClick="pasarusuario"
         android:id="@+id/btnGuardarnovedades"
         android:layout_width="match_parent"
-        android:layout_height="68dp"
+        android:layout_height="53dp"
         android:backgroundTint="@color/teal_700"
+        android:onClick="pasarusuario"
         android:text="Guardar"
         android:textColor="@color/black"
         app:iconTint="@color/teal_700" />

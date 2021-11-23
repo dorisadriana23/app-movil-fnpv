@@ -1,4 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="responsables_brigada" />
+    <string name="app_name">fnpv21</string>
+    <string name="web_client_id">xml</string>
+    <string-array name="informe">
+        <item>Seleccione</item>
+        <item>HTA</item>
+        <item>DM</item>
+        <item>HTA/DM</item>
+    </string-array>
+    <string-array name="lista_integrantes">
+        <item>Lista Desplegable de Responsables de Brigada</item>
+        <item>Lucia Marinez</item>
+        <item>Ana Gomez</item>
+        <item>sofia Bermudes</item>
+        <item>Marcos Serrano</item>
+        <item>Andres sanin</item>
+        <item>Sofia Martines</item>
+        <item>Juan solis</item>
+        <item>luis Camargo</item>
+    </string-array>
+    <string-array name="responsables_brigadas">
+        <item>Lista  Responsables de Brigada</item>
+        <item>Neusa Otero</item>
+        <item>Blanca Salinas</item>
+        <item>Nina Pillimue</item>
+        <item>Catherine Rios</item>
+        <item>Alexandra Quina</item>
+        <item>Luz Edith Salinas</item>
+        <item>Tatiana Salinas</item>
+        <item>Mayulli Morales</item>
+        <item>Sandra Flor</item>
+        <item>Ana Castro</item>
+    </string-array>
+    <string-array name="novedades">
+        <item>Estado de Novedad del Usuario---</item>
+        <item>Activo</item>
+        <item>Inactivo</item>
+        <item>Portabilidad</item>
+        <item>Cambio De Domicilio</item>
+        <item>Salida Del Programa</item>
+    </string-array>
 </resources>

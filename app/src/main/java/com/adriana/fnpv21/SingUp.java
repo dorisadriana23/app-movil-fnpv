@@ -76,7 +76,6 @@ public class SingUp extends AppCompatActivity implements View.OnClickListener {
         mcontrasena = (EditText) findViewById(R.id.usuario_contrasena);
         btnregistrar = (Button) findViewById(R.id.btnregistrar);
         btnlogin = (Button) findViewById(R.id.btnloguearse);
-        listV_personas = findViewById(R.id.lv_datosPersonas);
         inicializarFirebase();
         //noinspection RedundantCast
         btnregistrar.setOnClickListener(this);
